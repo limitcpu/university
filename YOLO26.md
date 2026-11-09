@@ -139,7 +139,7 @@ results[0].show()
 ```
 
 **控制台输出如下：**
-![79388045889](.\YOLO_images/1793880458895.png)
+![79388045889](YOLO_images/1793880458895.png)
 
 ```
 Speed: 25.5ms preprocess, 10.2ms inference, 11.2ms postprocess per image at shape (1, 3, 640, 480)
@@ -211,7 +211,7 @@ YOLO26 与所有Ultralytics YOLO模型一样，遵循经典的三段式流水线
 
 Backbone 负责从输入图像中提取多尺度语义特征，YOLO26的骨干继承YOLO11 设计并做了SPPF残差增强。
 
-![](YOLO_images\YOLO26_Backbone_网络结构图_高清重绘_3x.png)
+![](YOLO_images/YOLO26_Backbone_网络结构图_高清重绘_3x.png)
 
 *上图：YOLO26 骨干网络一 逐层下采样+ C3k2 特征提取+SPPF 空间池化+ C2PSA注意力*
 
@@ -263,7 +263,7 @@ return y + x # ← YOLo26 新增残差 shortcut
 
 Neck的核心任务是让不同尺度的特征图互相融合，使小物体也能获得大感受野的语义信息，大物体也能保留精细的空间定位。
 
-![](YOLO_images\YOLO26_Neck_网络结构图_高清重绘_3x.png)
+![](YOLO_images/YOLO26_Neck_网络结构图_高清重绘_3x.png)
 
 *图：Neck的FPN（自顶向下）+PAN（自底向上）双向融合路径*
 
@@ -313,7 +313,7 @@ Neck最终输出三个融合特征图，分别送入Detect头：
 
 YOLO26检测头最大的架构变革是引入**双头（Dual-Head）**设计，实现原生NMS-Free推理。
 
-![](YOLO_images\YOLO26_双头检测_高清重绘_3x.png)
+![](YOLO_images/YOLO26_双头检测_高清重绘_3x.png)
 
 *图：YOLO26 双头检测— One-to-One （推理）与One-to-Many（训练辅助）*
 
