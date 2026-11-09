@@ -205,7 +205,7 @@ YOLO26默认可以识别的物体种类和单张图像最多检测出的物体�
 
 YOLO26 与所有Ultralytics YOLO模型一样，遵循经典的三段式流水线：
 
-![](YOLO_images\YOLO26_整体三阶段架构_高清增强_4x.png)
+![](YOLO_images/YOLO26_整体三阶段架构_高清增强_4x.png)
 
 ### 2.骨干网络Backbone详解
 
